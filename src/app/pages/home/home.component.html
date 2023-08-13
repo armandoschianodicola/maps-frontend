@@ -1,0 +1,18 @@
+<div class="container">
+    <form>
+      <div class="grid">
+        <h2>Seleziona Evento</h2>
+        <div class="input-group-container">
+          <div>
+            <app-select-weather-event
+              (eventSelected)="onSelectEvent($event)"   
+            ></app-select-weather-event>
+          </div>
+        </div>
+        <div class="input-group" (click)="send()">
+          <button type="button" class="add btn-control">Invia</button>
+        </div>
+      </div>
+    </form>
+    <br />
+  </div>
