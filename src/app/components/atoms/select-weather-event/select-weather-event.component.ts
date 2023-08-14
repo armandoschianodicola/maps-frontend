@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { WeatherEventOption } from 'src/app/models/weather-event-option';
 import { WeatherEventOptionService } from 'src/app/services/weather-event-option.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class SelectWeatherEventComponent {
 
   @Output() onSelectEvent = new EventEmitter<any>();
 
-  options: { label: string; value: number }[] = [];
+  options: WeatherEventOption[] = [];
   title = 'Evento';
   placeholder = 'Evento';
 

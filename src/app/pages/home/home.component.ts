@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeatherEventOption } from 'src/app/models/weather-event-option';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,17 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
-  send(): void {
-    console.log('send')
+  selectedWeatherOption: WeatherEventOption = {
+    label: '',
+    value: 0
   }
 
-  onSelectEvent(e: any): void {
-    console.log('onSelectEvent', e)
+  send(): void {
+    console.log(this.selectedWeatherOption)
+  }
+
+  eventSelected(e: any): void {
+    this.selectedWeatherOption = e;
   }
 
 }
