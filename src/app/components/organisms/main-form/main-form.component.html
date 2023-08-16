@@ -1,0 +1,15 @@
+<form>
+    <div class="grid">
+      <h2>Seleziona Evento</h2>
+      <div class="input-group-container">
+        <div>
+          <app-select-weather-event
+            (onSelectEvent)="eventSelected($event)"
+          ></app-select-weather-event>
+        </div>
+      </div>
+      <div class="input-group" (click)="send()">
+        <button type="button" class="btn-send">Invia</button>
+      </div>
+    </div>
+  </form>
