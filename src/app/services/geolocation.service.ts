@@ -5,26 +5,23 @@ import { Injectable } from '@angular/core';
 })
 export class GeolocationService {
 
-  public lat: any;
-  public lng: any;
+  public lat: number = 0;
+  public lng: number = 0;
 
   getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position: any) => {
         if (position) {
-          console.log("Latitude: " + position.coords.latitude +
-            "Longitude: " + position.coords.longitude);
           this.lat = position.coords.latitude;
           this.lng = position.coords.longitude;
-          console.log(this.lat);
-          console.log(this.lat);
+          console.log(this.lat, this.lng);
         }
       },
         (error: any) => console.log(error));
     } else {
       alert("Geolocation is not supported by this browser.");
     }
+    console.log(this.lat, this.lng);
   }
-
   
 }

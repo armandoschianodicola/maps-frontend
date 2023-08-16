@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SelectWeatherEventComponent } from './components/atoms/select-weather-event/select-weather-event.component';
 import { MainFormComponent } from './components/organisms/main-form/main-form.component';
+import { MapComponent } from './components/organisms/map/map.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SelectWeatherEventComponent,
-    MainFormComponent
+    MainFormComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
