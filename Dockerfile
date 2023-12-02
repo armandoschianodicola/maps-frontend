@@ -1,4 +1,5 @@
 FROM node:latest as build
+LABEL maintainer="armando.schianodicola@gmail.com"
 RUN apt-get update 
 RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get upgrade -y
