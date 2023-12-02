@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+}
+
+.container {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 1em;
+}
+
+.btn-send {
+  font-size: 1.5rem;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 100%;
+  display: block;
+  padding: 8px 8px;
+}
+
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 30px;
+}
+
+.map-frame {
+  border: 2px solid black;
+  height: 100%;
+}
+
+#map {
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: transparent;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+select {
+  cursor: pointer;
+}/*# sourceMappingURL=styles.css.map */
