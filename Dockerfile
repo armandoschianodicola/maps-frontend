@@ -5,6 +5,7 @@ RUN apt-get install -y --no-install-recommends apt-utils
 RUN apt-get upgrade -y
 WORKDIR /usr/local/app
 COPY --chown=node:node . /usr/local/app/
+RUN npm cache clean --force
 RUN npm install
 RUN npm run build
 USER node
