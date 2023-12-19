@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment.development';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -22,8 +22,6 @@ export class GeolocationService {
     } else {
       alert("Geolocation is not supported by this browser.");
     }
-    console.log(this.lat, this.lng);
-    console.log("environment.production", environment.production);
   }
   
 }
